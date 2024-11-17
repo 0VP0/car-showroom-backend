@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/admin")  // Base URL for all admin-related endpoints
 public class AdminController {
 
-    private AuthService authService;  // Service for handling authentication-related tasks
+    private final AuthService authService;  // Service for handling authentication-related tasks
 
     /**
      * Endpoint to retrieve all users with pagination support.
